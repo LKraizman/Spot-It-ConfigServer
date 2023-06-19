@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LKraizman/spot-It-configuration
+          username: ${L.Kraizman}
+          password: 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
+          default-label: "main"
+      profiles:
+        active: dev, prod
